@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def scrape_business_contacts(keyword, location):
-    url = f'https://example.com/business-directory/?keyword={keyword}&location={location}'
+    url = f'https://www.dnb.com/business-directory.html#BusinessDirectoryPageNumber=1&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Contact%20Directory?keyword={keyword}&location={location}'
     headers = {'User-Agent': 'Your User Agent Here'}  # Add your user agent to mimic a real browser
     
     response = requests.get(url, headers=headers)
